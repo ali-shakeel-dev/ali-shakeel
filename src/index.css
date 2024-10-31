@@ -1,0 +1,132 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'pp_semibold';
+  src: url('../src/assets/Fonts/PPMori-SemiBold.otf');
+}
+
+@font-face {
+  font-family: 'pp_regular';
+  src: url('../src/assets/Fonts/PPMori-Regular.otf');
+}
+
+@font-face {
+  font-family: 'pp_light';
+  src: url('../src/assets/Fonts/PPMori-Extralight.otf');
+}
+
+body {
+  font-family: 'pp_regular';
+  background-color: #141414;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+h1,
+h2 {
+  font-family: 'pp_semibold' !important;
+  color: white;
+}
+
+p,
+a,
+hr,
+li {
+  color: #5e5e5e;
+  font-family: 'pp_regular';
+}
+
+.skill {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card {
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.btn {
+  background-color: #1A1A1A;
+  color: #5e5e5e;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+.section {
+  background-color: #141414;
+}
+
+#closeBtn,
+#openBtn {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  #root {
+    padding: 0 10px;
+  }
+
+  .navbar {
+    padding: 0 50px;
+  }
+
+  .menu {
+    position: absolute;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    right: -60%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    padding: 75px 40px;
+    height: 100vh;
+    transition: all ease .5s;
+  }
+
+  .menu.active {
+    right: 0%;
+  }
+
+  #closeBtn {
+    position: absolute;
+    display: initial;
+    top: 20px;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 50%;
+    right: 20px;
+  }
+
+  #openBtn {
+    display: initial;
+    background-color: whitesmoke;
+    padding: 5px;
+  }
+
+  #projects {
+    padding: 0 15px;
+    margin: 0 15px;
+  }
+
+  .experience_1 {
+    padding: 30px;
+  }
+
+  .heroHeading {
+    font-size: 2rem;
+  }
+
+}
